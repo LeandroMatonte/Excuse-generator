@@ -10,10 +10,10 @@ var when = [
 ];
 
 function concatenar(who, action, what, when) {
-  var randomWho = who[Math.floor(Math.random() * 4)];
-  var randomAction = action[Math.floor(Math.random() * 4)];
-  var randomWhat = what[Math.floor(Math.random() * 4)];
-  var randomWhen = when[Math.floor(Math.random() * 4)];
+  var randomWho = who[Math.floor(Math.random() * who.length)];
+  var randomAction = action[Math.floor(Math.random() * action.length)];
+  var randomWhat = what[Math.floor(Math.random() * what.length)];
+  var randomWhen = when[Math.floor(Math.random() * when.length)];
 
   return (document.querySelector("#excuse").innerHTML =
     randomWho + " " + randomAction + " " + randomWhat + " " + randomWhen);
